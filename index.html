@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<link rel="icon" href="Imagens/favicon.png">
+
+	<title>Jackson Rodrigues</title>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
+
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-media-queries/0.6.1/match-media.min.js">
+
+  	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+  	<script type="text/javascript">
+  		
+  		$(document).ready(function(){
+  			
+  			abre_navegacao_inferior();
+
+  		});
+
+  		//Evento hover barra de navegação INFERIOR
+  		function abre_navegacao_inferior(){
+			$('.navbar-custom-bottom').mouseover(function(){
+	  			passa_mouse_barra_inferior();
+	  		});
+	  		$('.navbar-custom-bottom').mouseout(function(){
+	  			tira_mouse_barra_inferior();
+	  		});
+  		}
+
+  		function passa_mouse_barra_inferior(){
+  			//Visibilidade div barra de navegação INFERIOR
+  			$('.navbar-custom-bottom>.navbar-header>.navbar-brand').css({'visibility':'hidden', 'opacity':'0', 'transition':'visibility 0.2s, opacity 0.2s'});
+
+  			//Visibilidade imagem de perfil barra de navegação INFERIOR
+  			$('.navbar-custom-bottom>div>img').css({'height':'85px', 'visibility':'visible', 'opacity':'1', 'transition':'height 0.1s, visibility 0.7s, opacity 0.7s'});
+
+  			$('.navbar-custom-bottom>div').css({'margin-bottom':'100px', 'margin-top':'15px', 'transition':'margin 0.5s'});
+
+  			//seta VISIBILIDADE ao H4 que está dentro da barra de navegação INFERIOR
+  			$('.navbar-custom-bottom>div>h4').css({'display':'inline-block', 'visibility':'visible', 'opacity':'1', 'transition':'visibility 0.9s, opacity 0.9s'});
+  		}
+
+  		function tira_mouse_barra_inferior(){
+  			//Visibilidade div barra de navegação INFERIOR
+  			$('.navbar-custom-bottom>.navbar-header>.navbar-brand').css({'visibility':'visible', 'opacity':'1', 'transition':'visibility 0.5s, opacity 0.5s'});
+
+  			//Visibilidade imagem de perfil barra de navegação INFERIOR
+  			$('.navbar-custom-bottom>div>img').css({'height':'0px', 'visibility':'hidden', 'opacity':'0', 'transition':'height 0.1s, visibility 0.7s, opacity 0.7s'});
+
+  			$('.navbar-custom-bottom>div').css({'margin-bottom':'0px', 'margin-top':'0px', 'transition':'margin 0.5s'});
+
+  			//remove VISIBILIDADE ao H4 que está dentro da barra de navegação INFERIOR
+  			$('.navbar-custom-bottom>div>h4').css({'display':'none', 'visibility':'hidden', 'opacity':'0', 'transition':'visibility 0.9s, opacity 0.9s'});
+  		}
+
+  	</script>
+
+</head>
+
+<body>
+
+	<!-- Barra de navegação SUPERIOR -->
+	<nav class="navbar navbar-custom navbar-fixed-top">
+		<div class="container">
+
+			<!-- Posição logo barra de navegação SUPERIOR -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand">JACKSON RODRIGUES</a>
+			</div>
+			
+			<!-- Itens do menu da barra de navegação SUPERIOR -->
+			<div class="collapse navbar-collapse" id="nav-toggle">
+				<ul class="nav navbar-nav navbar-right">
+					<li id="nav-inicio"> <a href="#inicio">INÍCIO</a> </li>
+					<li id="nav-formacao-academica"> <a href="#formacao-academica">FORMAÇÃO ACADÊMICA</a> </li>
+					<li id="nav-cursos"> <a href="#cursos">CURSOS</a> </li>
+					<li id="nav-experiencia"> <a href="#experiencia">EXPERIÊNCIA</a> </li>
+					<li id="nav-iniciacao-cientifica"> <a href="#iniciacao-cientifica">INICIAÇÃO CIENTÍFICA</a> </li>
+					<li id="nav-contato"> <a href="#contato">CONTATO</a> </li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- Barra de navegação INFERIOR -->
+	<nav class="navbar navbar-custom-bottom navbar-fixed-bottom">
+		<div>
+			<img class="img-circle" src="Imagens/perfil.jpg">
+			<h4 id="nome-desenvolvedor">Jackson Rodrigues<br>Desenvolvedor Front-End</h4>
+
+			<h4>
+				<span class="glyphicon glyphicon-earphone"></span> (47)99611-2132
+				<br>
+				<span class="glyphicon glyphicon-envelope"></span> rodriguesjackson928@gmail.com
+				<br><br><br>
+				São Bento do Sul - SC
+			</h4>
+		</div>
+
+		<!-- Posição logo na barra de navegação INFERIOR -->
+		<div class="navbar-header">
+			<a class="navbar-brand">
+				<span class="glyphicon glyphicon-earphone"></span> 
+				(47)99611-2132
+			</a>
+		</div>
+	</nav>
+
+	<!-- Seção início -->
+	<div id="inicio"></div>
+
+	<!-- Seção formação acadêmica -->
+	<div class="row">
+		<div class="col-md-12" id="formacao-academica">
+			<div class="container">
+
+				<h3 class="h3-titulo">FORMAÇÃO ACADÊMICA</h3>
+
+				<div>
+					<!-- Imagem logo UDESC -->
+					<img id="img-udesc" class="size-image" src="Imagens/logo-udesc.png">
+
+					<!-- Imagem símbolo Sistemas -->
+					<img class="size-image" src="Imagens/simbolo-SI.png">
+				</div>
+
+				<!-- Descrições da formação -->
+				<div id="resumo-formacao">
+					<h3>Graduando em Sistemas de Informação (6º semestre)</h3>
+					<h4>UDESC - Universidade do Estado de Santa Catarina</h4>
+				</div>
+
+				<div class="col-md-3"></div>
+
+				<!-- Imagens adicionais da formação (linguagens de programação) -->
+				<div class="col-md-4" id="conhecimentos">
+					<h4>CONHECIMENTOS EM:</h4>
+					<img src="Imagens/css.png">
+					<img src="Imagens/html5.png">
+					<img style="margin-left: 15px;" src="Imagens/jquery.png">
+					<img style="margin-left: 25px;" src="Imagens/my_sql.png">
+					<img style="margin-left: 25px;" src="Imagens/bootstrap.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Seção experiência -->
+	<div class="row">
+		<div class="col-md-12" id="experiencia">
+			<div class="container">
+
+				<h3 class="h3-titulo-black">EXPERIÊNCIA PROFISSIONAL</h3>
+				
+				<!-- Imagens e descrição do local de trabalho e informações -->
+				<div id="local_trabalho">
+					<img class="size-image" src="Imagens/prefeitura-sbs.png">
+					<h3>Estágio em Tecnologia de Informação</h3>
+					<h4>SEMED - Secretaria Municipal de Educação de São Bento do Sul</h4>
+					<h4>(Desde 03/18 até o momento)</h4>
+				</div>
+
+				<div class="col-md-3"></div>
+
+				<!-- Descrição das atividades desenvolvidas na função -->
+				<div class="col-md-4" id="atividades-desenvolvidas">
+					<h4>ATIVIDADES DESENVOLVIDAS</h4>
+					<span>Atendimento técnico em todas as Unidades Escolares do município e na SEMED, alguns atendimentos realizados:</span>
+					<br><br>	
+					<p>* Manutenção em computadores e notebooks(Software e Hardware)
+					   <br>
+					   * Configuração em redes de internet(Cabeada e Wireless)
+					   <br>
+					   * Instalação e configuração de impressoras(USB, Wireless e cabeada)
+					</p>
+					<br><br>
+					<p>Principais Sistemas Operacionais utilizados: Linux e Windows</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<!-- Seção cursos -->
+	<div class="row">
+		<div class="col-md-12" id="cursos">
+			<div class="container">
+
+				<h3 class="h3-titulo">CURSOS DE APERFEIÇOAMENTO</h3>
+
+				<!-- Imagens dos cursos realizados e descrições dos mesmos -->
+				
+				<div class="col-md-4">
+					<img class="size-image" src="Imagens/senac.png">
+					<h3>Técnico em montagem e manutenção de computadores</h3>
+				</div>
+
+				<div class="col-md-4">
+					<img class="size-image" src="Imagens/udemy.png">
+					<h3>Desenvolvimento web completo</h3>
+					<h4>Abordagem: HTML5, CSS3, Bootstrap, PHP, MySQL e Ajax.</h4>
+				</div>
+
+				<div class="col-md-4">
+					<img class="size-image" src="Imagens/udemy.png">
+					<h3>Cientista de dados (em progresso)</h3>
+				</div>
+
+				<div class="col-md-6">
+					<img class="size-image" src="Imagens/yes_bras.png">
+					<h3>Inglês intermediário</h3>
+				</div>
+
+				<div class="col-md-6">
+					<img class="size-image" src="Imagens/yes_bras.png">
+					<h3>Informática básica e avançada</h3>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12" id="iniciacao-cientifica">
+			<div class="container">
+
+				<h3 class="h3-titulo-black">PROJETO DE INICIAÇÃO CIENTÍFICA</h3>
+
+				<div>
+					<img class="size-image" src="Imagens/logo-udesc.png">
+					<h3>Bolsista voluntário de iniciação científica</h3>
+					<h4>"Estudo de ferramentas de software para processamento de dados georreferenciados obtidos a partir de VANT's"</h4>
+					<img id="img-uav" src="Imagens/uav.png">
+					<p>* Imagem meramente ilustrativa</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<!-- Botão para enviar mensagem no WhatsApp em dispositívos móveis -->
+	<a href="https://api.whatsapp.com/send?phone=5547996112132&text=Olá, tudo bem?"
+	   id="button-whatsapp-small-devices">
+	   <img src="Imagens/whats.png">
+	</a>
+
+	<!-- Ródape -->
+	<footer id="contato">
+		<div class="container">
+
+			<div class="col-md-4">
+				<span> Fone/WhatsApp: (47)99611-2132</span>
+				<br>
+				<span> E-mail: rodriguesjackson928@gmail.com</span>
+			</div>
+			<div class="col-md-4"> <span>Desenvolvido por Jackson Rodrigues<br>2018</span> </div>
+			<div class="col-md-4">
+				<a href="https://www.facebook.com/jackson.rodrigues.3538"> <img src="Imagens/facebook.png"> </a>
+			</div>
+
+		</div>
+	</footer>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+body, html{
+	height: 100%;
+	overflow-x: hidden;
+}
+
+/*------- Barra de navegação SUPERIOR -------*/
+
+.navbar-custom{
+	background-color: #2F4F4F;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*------- Muda a cor das tabelas na barra de navegação SUPERIOR ao passar o mouse -------*/
+
+.navbar-custom>.container>div>.nav>li>a{
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-webkit-transition: background 0.4s;
+}
+.navbar-custom>.container>div>.nav>li>a:hover{
+	background-color: #4CAF50;
+}
+
+/*------- Formatação da logo/título da barra de navegação SUPERIOR -------*/
+
+.navbar-custom>.container>.navbar-header>.navbar-brand{
+	color: white;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif
+}
+
+/*------- Seta cor branca no toggle(icon-bar/traços) da barra de navegação SUPERIOR -------*/
+
+.navbar-custom>.container>.navbar-header>button>span{ background-color: white; }
+
+/*------- Seta cor cinza no toggle da barra de navegação SUPERIOR ao passar o mouse -------*/
+
+.navbar-custom>.container>.navbar-header>button:hover{ 
+	background-color: grey; 
+	transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-webkit-transition: background 0.5s; 
+}
+
+/*------- Barra de navegação INFERIOR -------*/
+
+.navbar-custom-bottom{
+	background-color: #483D8B;
+	width: 250px;
+	margin-left: auto;
+	border-top-left-radius: 25px;
+	-moz-border-top-left-radius: 25px;
+	-webkit-border-top-left-radius: 25px;
+	box-shadow: 5px 0px 5px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 0px 5px 5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 5px 0px 5px 5px rgba(0,0,0,0.75);
+	text-align: center;
+	visibility: hidden;
+}
+.navbar-custom-bottom>.navbar-header{ float: left; padding: 15px; text-align: center; width: 100%; }
+.navbar-custom-bottom>.navbar-header>.navbar-brand{
+	color: white;
+	float: none; 
+	font-weight: bold;  
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+/*------- Inicia os valores da barra de navegação INFERIOR -------*/
+
+.navbar-custom-bottom>div{ height: 0px; }
+.navbar-custom-bottom>div>img{ visibility: hidden; opacity: 0; height: 0px; }
+
+/*------- Formatação do texto contendo o nome do desenvolvedor que está dentro da barra de navegação INFERIOR -------*/
+
+#nome-desenvolvedor{ font-weight: bold; font-style: italic; }
+
+/*------- Formatação do texto com informações de contato na barra de navegação INFERIOR -------*/
+
+.navbar-custom-bottom>div>h4{ 
+	visibility: hidden; 
+	display: none; 
+	font-size: 14px; 
+	color: white; 
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;  
+	padding: 5px 0px 5px 5px;
+	opacity: 0;
+}
+
+/* Botão WhatsApp para dispositivos móveis */
+
+#button-whatsapp-small-devices{ 
+	background-color: #25d366; 
+	box-shadow: 3px 0px 3px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 0px 3px 3px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 3px 0px 3px 3px rgba(0,0,0,0.75);
+	width: 70px;
+	height: 70px;
+	bottom: 20px;
+	right: 20px;
+	position: absolute;
+	visibility: hidden;
+	text-align: center;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+
+/*------- Formata a imagem do WhatsApp para se estender ao tamanho inteiro da tag a -------*/
+
+#button-whatsapp-small-devices>img{ height: 100%; }
+
+/*------- Formatação dos textos título nas respectivas seções -------*/
+
+.h3-titulo{ font-size: 28px; color: white; text-align: center; margin-top: 55px; font-weight: bold; }
+.h3-titulo-black{ font-size: 28px; color: black; text-align: center; margin-top: 55px; font-weight: bold; }
+
+/*------- Plano de fundo inicial -------*/
+
+#inicio{
+	background-image: url('Imagens/background-header.jpg');
+	background-attachment: fixed;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*------- Div -> Formação acadêmica -------*/
+
+#formacao-academica{
+	background-image: url('Imagens/background-formacao.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+/*------- Alinha os conteúdos ao centro do container -------*/
+
+#formacao-academica>.container{	text-align: center; }
+
+#resumo-formacao{ margin-top: 50px; }
+#resumo-formacao>h3{ font-style: italic; color: white; }
+#resumo-formacao>h4{ color: white; }
+
+.size-image{
+	height: 100px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	margin: 55px 0px 0px 0px; 
+}
+
+#conhecimentos{ 
+	margin-top: 70px; 
+	padding-bottom: 75px; 
+	background-color: #8B8989; 
+	width: 50%; 
+	border-radius: 400px 400px 0px 0px;
+	-moz-border-radius: 400px 400px 0px 0px;
+	-webkit-border-radius: 400px 400px 0px 0px;
+}
+#conhecimentos>img{ height: 70px; margin-top: 50px; }
+#conhecimentos>h4{ color: white; font-weight: bold; padding-top: 35px; font-size: 20px; }
+
+/*------- Div -> Experiência -------*/
+
+#experiencia{
+	background-image: url('Imagens/background-experiencia.jpg');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#local_trabalho{ text-align: center; }
+#local_trabalho>h3{ font-style: italic; color: black; margin-top: 50px; }
+#local_trabalho>h4{ color: black; }
+
+#atividades-desenvolvidas{ 
+	width: 50%;
+	height: 285px; 
+	margin-top: 20px;
+	border-radius: 30px 30px 0px 0px;
+	-moz-border-radius: 30px 30px 0px 0px;
+	-webkit-border-radius: 30px 30px 0px 0px;
+	background-color: #696969; 
+}
+#atividades-desenvolvidas>h4{ text-align: center; color: white; font-weight: bold; padding-top: 20px; }
+#atividades-desenvolvidas>span{ 
+	color: white; font-size: 16px; 
+	text-align: center; 
+	margin-top: 20px; 
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+}
+#atividades-desenvolvidas>p{ 
+	color: white; 
+	text-align: center; 
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+	font-weight: bold; 
+	font-size: 15px;
+}
+
+/*------- Div -> Cursos -------*/
+
+#cursos{ 
+	height: 100%; 
+	background-image: url('Imagens/background-formacao.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#cursos>.container{ margin-bottom: 55px; }
+#cursos>.container>div{ text-align: center; }
+#cursos>.container>div>h3{ font-style: italic; color: white; margin-top: 30px; text-align: center; font-size: 18px; }
+#cursos>.container>div>h4{ color: white; text-align: center; }
+#cursos>.container>.col-md-6{ margin-top: 55px; }
+
+/* Div - Iniciação científica */
+
+#iniciacao-cientifica{
+	background-image: url('Imagens/background-experiencia.jpg');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#iniciacao-cientifica>.container>div{ text-align: center; }
+#iniciacao-cientifica>.container>div>h3{ font-style: italic; color: black; margin-top: 50px; }
+#iniciacao-cientifica>.container>div>h4{ color: black; }
+#iniciacao-cientifica>.container>div>p{ color: black; font-style: italic; margin-bottom: 55px; font-size: 12px; }
+
+/* Imagem drone */
+
+#img-uav{ height: 180px; margin-top: 55px; }
+
+/* Rodapé */
+
+footer{
+	background-color: #2F4F4F;
+}
+footer>.container>div{ padding-top: 25px; padding-bottom: 75px; text-align: center; }
+
+/* Efeito ao passar o mouse - Botão facebook */
+
+footer>.container>div>a>img{ 
+	transition: background 0.4s; 
+	-moz-transition: background 0.4s; 
+	-webkit-transition: background 0.4s; 
+	border-radius: 100px; 
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	padding: 3px; 
+}
+footer>.container>div>a>img:hover{ background-color: white; }
+
+footer>.container>div>span{ 
+	color: white; 
+	font-size: 14px; 
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px){
+
+	/* Aumenta a largura da div */
+
+	#conhecimentos{ width: 60%; }
+}
+
+@media screen and (max-width: 1000px){
+
+	/* Remove as bordas onduladas e estica o container */
+
+	#conhecimentos, #atividades-desenvolvidas{ width: 100%; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; }
+	#formacao-academica>.container, #experiencia>.container{ display: contents; }
+	#atividades-desenvolvidas{ height: 375px; }
+}
+
+@media screen and (max-width: 767px){
+	.size-image{ height: 75px; }
+	#cursos>.container>.col-md-6{ margin-top: 0px; }
+	#cursos{ border: solid grey 0.01px; }
+	#img-udesc{ margin-left: 0px; }
+	h3{ font-size: 20px; }
+	h4{ font-size: 17px; }
+
+	/* Esconde a barra de navegação INFERIOR, e mostra o botão WhatsApp */
+
+	.navbar-custom-bottom{ visibility: hidden; display: none; }
+	#button-whatsapp-small-devices{ visibility: visible; }
+}
+
+@media screen and (min-width: 768px){
+
+	/* Esconde o botão WhatsApp, e mostra a barra de navegação INFERIOR */
+
+	.navbar-custom-bottom{ visibility: visible; }
+	#button-whatsapp-small-devices{ visibility: hidden; display: none; }
+}

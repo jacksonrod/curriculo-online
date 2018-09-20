@@ -2,7 +2,7 @@
 Currículo desenvolvido utilizando HTML5, CSS3, JQuery e Bootstrap.
 
 Currículo profissional online
-O que é isso?
+<strong>O que é isso?</strong>
 	Um modelo de currículo no formato de um site na web, com informações pertinentes à mim, o desenvolvedor do mesmo.
 	O código é de livre acesso e pode ser usado e alterado por quem desejar.
 Características

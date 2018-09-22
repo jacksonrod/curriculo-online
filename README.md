@@ -31,7 +31,7 @@ Currículo desenvolvido utilizando HTML5, CSS3, JQuery e Bootstrap.
   
 ## Autor/Mantenedor
 
-  Jackson Rodrigues |https://github.com/jacksonrod| 
+  Jackson Rodrigues - https://github.com/jacksonrod
   
 ## Limitações e problemas conhecidos
 
